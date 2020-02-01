@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#505050"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+            android:src="@drawable/cal_screen_background" />
+
+        <TextView
+            android:id="@+id/screen_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:padding="0dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="48sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <!-- first line buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="minusFlipClicked"
+                android:text="-/+" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="acClicked"
+                android:text="C" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="cClicked"
+                android:text="DEL" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="divisionClicked"
+                android:text="/" />
+
+
+        </LinearLayout>
+
+        <!-- second line buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="7" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="8" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="9" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="multiplicationClicked"
+                android:text="X" />
+
+
+        </LinearLayout>
+
+        <!-- third line buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="4" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="5" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="6" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="minusClicked"
+                android:text="-" />
+
+
+        </LinearLayout>
+
+        <!-- forth line buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="1" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="2" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="3" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="additionClicked"
+                android:text="+" />
+
+
+        </LinearLayout>
+
+        <!-- fifth line buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_weight="2"
+                android:onClick="digitClicked"
+                android:text="0" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="digitClicked"
+                android:text="." />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="equalClicked"
+                android:text="=" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
